@@ -1,0 +1,33 @@
+/***** colors alice blue #E7EAEF -- #AB0D1B firebrick -- 
+#1D2F6F st patricks blue -- #FAC748 maize crayola ***/ 
+
+body {
+    
+}
+
+
+
+.header {
+    background-color: #FAC748;
+   
+
+}
+
+.container {
+    background-color: #E7EAEF;
+
+    
+}
+
+.bottom {
+    background-color: #AB0D1B;
+  
+    
+}
+
+.btn {
+    background-color: #1D2F6F;
+    border-radius: 8px;
+    color: #E7EAEF;
+    padding: 8px;
+}

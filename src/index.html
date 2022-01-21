@@ -6,9 +6,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <div class="header" id="root">
       <h1>Hello world!</h1>
     </div>
+
+    <div class="container">
+      <h3>Que os jogos comecem...</h3>
+      
+      <form class="cifrada" action="">
+        <label for="name">Mensagem (texto) para ser cifrada:</label> <br>
+        <textarea id="msg-vira-cifra" name="msg-vira-cifra"></textarea> <br><br>
+        <label for="name">Agora escolha o *Offset</label> <br>
+        <input type="number" id="cifra-offset"> 
+        <p>*Offset: deslocamento - fazer uma explicacao para o user</p>
+        <button type="button" class="btn">Cifrar agora</button> <br> <br> <br>
+        <label for="">Tcharammmmm... Resultado:</label> <br>
+        <textarea id="msg-cifrada" name="msg-cifrada"></textarea> 
+
+        <!-- para que serve esse "for" no label? -->  
+
+        <h1>Testando comandos git</h1>
+
+
+      </form>
+
+    </div>
+
+    <div class="bottom">
+      <p>Developed by Layssa 🦄</p>
+
+    </div>
+
     <script src="index.js" type="module"></script>
+
   </body>
 </html>
