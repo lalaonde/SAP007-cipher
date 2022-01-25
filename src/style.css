@@ -2,7 +2,7 @@
 #1D2F6F st patricks blue -- #FAC748 maize crayola ***/ 
 
 body {
-    
+    background-color: rgba(198, 198, 247, 0.605);
 }
 
 
@@ -13,11 +13,24 @@ body {
 
 }
 
-.container {
+.container-1 {
     background-color: #E7EAEF;
+    display: inline-block; 
+    
+    padding: 20px;
 
     
 }
+
+.container-2 {
+    background-color: #E7EAEF;
+    display: inline-block; 
+    
+
+    
+}
+
+
 
 .bottom {
     background-color: #AB0D1B;

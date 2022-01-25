@@ -6,38 +6,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <div class="header" id="root">
       <h1>Hello world!</h1>
     </div>
 
-    <div class="container">
-      <h3>Que os jogos comecem...</h3>
+    <div class="container-1">
+      <h3>Que os jogos comecem... Cifre ou Decifre uma mensagem:</h3>
       
       <form class="cifrada" action="">
-        <label for="name">Mensagem (texto) para ser cifrada:</label> <br>
-        <textarea id="msg-vira-cifra" name="msg-vira-cifra"></textarea> <br><br>
-        <label for="name">Agora escolha o *Offset</label> <br>
+        <label for="name">Mensagem (texto)</label> <br>
+        <textarea id="textoliso" name="msg-vira-cifra"></textarea> <br><br>
+        <label for="name">Agora escolha o *Offset (Use apenas para cifrar)</label> <br>
         <input type="number" id="cifra-offset"> 
+        
+        <button id="btn-cifrar" type="button" class="btn" onclick="cifrarMensagem(textoliso.value)">Cifrar</button> <br> <br> <br>
+        <button id="btn-decifrar" type="button" class="btn">Decifrar agora</button> <br> <br> <br>
         <p>*Offset: deslocamento - fazer uma explicacao para o user</p>
-        <button type="button" class="btn">Cifrar agora</button> <br> <br> <br>
+        <p id="msg-confirmacao"></p>
         <label for="">Tcharammmmm... Resultado:</label> <br>
         <textarea id="msg-cifrada" name="msg-cifrada"></textarea> 
 
-        <!-- para que serve esse "for" no label? -->  
-
-        <h1>Testando comandos git</h1>
-
-
       </form>
-
     </div>
+
+      
+    
+
+
+      
 
     <div class="bottom">
       <p>Developed by Layssa 🦄</p>
 
     </div>
 
-    <script src="index.js" type="module"></script>
+    <script src="index.js" type="text/javascript"></script>
 
   </body>
 </html>
