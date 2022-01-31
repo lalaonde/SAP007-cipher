@@ -123,17 +123,20 @@
   }
   
   .rodape {
+    background-color: #fcdc4dbb;
+    padding: 20px;
       
   }
   
   .texto-rodape {
     padding-left: 30px;
     padding-right: 30px;
-    
+    font-family: "SteinAntik";
     margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 20px;
-    color: #fcdc4d;
+    font-size: 15px;
+    color: black;
+   
   
   }
   

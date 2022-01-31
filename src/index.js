@@ -1,6 +1,6 @@
 // import cipher from './cipher.js';   <-- TEM QUE TER ISSO - PRECISO DIVIDIR OS ARQUIVOS
 
-var button = document.querySelector("button");
+// var button = document.querySelector("button");
 
 const alfabeto = [
   "A",
@@ -67,7 +67,7 @@ var decifrar = document.getElementById("btn-decifrar");
 decifrar.addEventListener("click", decifrarTexto);
 
 function decifrarTexto() {
-  var mensagemParaDecifrar = document.getElementById("decifrar").value; //prompt("Digite seu nome:");
+  var mensagemParaDecifrar = document.getElementById("decifrar").value.toUpperCase().replace(/\s+/g, ''); //prompt("Digite seu nome:");
   var offsetDecifrar = document.getElementById("decifra-offset").value; //prompt("Escolha o deslocamento:");
   var resultadoDecifrar = "";
   var novoIndexLetraDecifrada;
