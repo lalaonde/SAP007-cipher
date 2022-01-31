@@ -1,47 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
   </head>
   <body>
     
-    <div class="header" id="root">
-      <h1>Hello world!</h1>
-    </div>
-
-    <div class="container-1">
-      <h3>Que os jogos comecem... Cifre ou Decifre uma mensagem:</h3>
-      
-      <form class="cifrada" action="">
-        <label for="name">Mensagem (texto)</label> <br>
-        <textarea id="textoliso" name="msg-vira-cifra"></textarea> <br><br>
-        <label for="name">Agora escolha o *Offset (Use apenas para cifrar)</label> <br>
-        <input type="number" id="cifra-offset"> 
-        
-        <button id="btn-cifrar" type="button" class="btn" onclick="cifrarMensagem(textoliso.value)">Cifrar</button> <br> <br> <br>
-        <button id="btn-decifrar" type="button" class="btn">Decifrar agora</button> <br> <br> <br>
-        <p>*Offset: deslocamento - fazer uma explicacao para o user</p>
-        <p id="msg-confirmacao"></p>
-        <label for="">Tcharammmmm... Resultado:</label> <br>
-        <textarea id="msg-cifrada" name="msg-cifrada"></textarea> 
-
-      </form>
-    </div>
-
-      
-    
-
-
-      
-
-    <div class="bottom">
-      <p>Developed by Layssa 🦄</p>
+  
+    <div class="cabecalho">
+    <h1>A Cifra de César</h1> 
 
     </div>
 
-    <script src="index.js" type="text/javascript"></script>
+    <div class="conteudo">
+      
+      <div class="cartao">
+        <form id="dados" action="">
+          <h3>Cifre sua mensagem:</h3>
+          <div class="texto-area">
+              <textarea class="caixa-de-texto" cols="30" rows="15" name="" id="cifrar" cols="30" 
+                        rows="10" placeholder="My loneliness is killing me/ I must confess, I still believe/ Give me a sign/ Hit me, baby, one more time..."
+                        ></textarea>
+          </div> 
+          <br>
+          <input class="escolha-offset" type="number" id="offset" placeholder="Offset*"></input> 
+          <button class="botao" type="button" id="btn-cifrar">Cifrar</button>
+          <p class="texto-offset">*Offset é o deslocamento da letra. Ex: ao escolher um offet de nº 4, a letra "B" andará 4 posições, tornando-se, assim,  a letra "F".</p>
+  
+        </form>
 
+      </div>
+
+      <div class="cartao">
+        <form>
+          <h3>Ou decifre:</h3>
+          <div class="class="texto-area>
+            <textarea class="caixa-de-texto" cols="30" rows="15" name="" id="decifrar" cols="30" 
+                      rows="10" placeholder="Say my name, say my name/ If no one is around you/ Say baby I love you/ If you ain't runnin' game..."></textarea>
+          </div> 
+          <br>
+          <input class="escolha-offset" type="number" id="decifra-offset" placeholder="Offset"></input>
+          <button class="botao" type="button" id="btn-decifrar">Decifrar</button>
+  
+        </form>
+
+      </div>
+
+    </div>
+
+  
+    <div class="informacoes">
+      <h2>César quem? Cifra o quê?</h2>
+  <p class="texto-informacoes">A cifra de César foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado, é sabido que outras cifras de substituições foram utilizadas anteriormente.
+  </p>
+  <p class="texto-informacoes">Trata-se de um tipo de cifra de substituição, na qual cada letra de um texto a ser criptografado é substituída por outra letra, presente no alfabeto porém deslocada um certo número de posições à esquerda ou à direita.</p>
+  <img src="images/cifra.png" alt="sistema-de-cifra" class="imagem-cifra">
+    </div>
+
+    <div class="rodape">
+      <p class="texto-rodape">Desenvolvido por Layssa Aragão ✌🏼</p>
+      <a class="texto-rodape" href="https://linkedin.com/in/layssaaragaob">Linkedln</a>
+      <a class="texto-rodape" href="https://github.com/lalaonde">GitHub</a>
+      
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

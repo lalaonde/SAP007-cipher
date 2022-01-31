@@ -1,46 +1,169 @@
-/***** colors alice blue #E7EAEF -- #AB0D1B firebrick -- 
-#1D2F6F st patricks blue -- #FAC748 maize crayola ***/ 
-
-body {
-    background-color: rgba(198, 198, 247, 0.605);
-}
-
-
-
-.header {
-    background-color: #FAC748;
-   
-
-}
-
-.container-1 {
-    background-color: #E7EAEF;
-    display: inline-block; 
-    
-    padding: 20px;
-
-    
-}
-
-.container-2 {
-    background-color: #E7EAEF;
-    display: inline-block; 
-    
-
-    
-}
-
-
-
-.bottom {
-    background-color: #AB0D1B;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   
+  body {
+    background: linear-gradient(
+        90deg,
+        rgba(214, 250, 216, 0.08),
+        rgba(235, 253, 239, 0.1)
+      ),
+      url("images/coliseu3.jpg");
+  
+    background-size: cover;
+    background-position: top;
     
-}
-
-.btn {
-    background-color: #1D2F6F;
-    border-radius: 8px;
-    color: #E7EAEF;
-    padding: 8px;
-}
+    
+  }
+  
+  h1 {
+    margin-left: 20px;
+    color: #fcdc4d;
+    font-family: "SteinAntik-Bold";
+    font-size: 50px;
+    margin: 30px;
+    padding-left: 100px;
+  }
+  h2 {
+    margin-left: 20px;
+    color: #fcdc4d;
+    font-family: "SteinAntik";
+    font-size: 30px;
+    margin: 30px;
+  }
+  
+  h3 {
+    color: #fcdc4d;
+    font-family: "SteinAntik";
+    font-size: 20px;
+    margin-top: 2rem;
+    padding-bottom: 20px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  p {
+  }
+  
+  .botao {
+    border-radius: 10px;
+    padding: 5px;
+    width: 45%;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .botao:hover {
+    background: #fcdc4d;
+  }
+  
+  .cabecalho {
+    background-color: rgba(0, 0, 0, 0.598);
+    padding: 20px;
+  }
+  
+  .conteudo {
+    margin: auto;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .cartao {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    width: 40%;
+  
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.797);
+    border: solid 2px rgba(255, 255, 255, 0.027);
+    color: white;
+    padding: 4rem;
+  }
+  .caixa-de-texto {
+    border-radius: 10px;
+  }
+  .escolha-offset {
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px;
+  }
+  .imagem-cifra {
+    width: 30%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .informacoes {
+    background-color: rgba(0, 0, 0, 0.598);
+    padding: 20px;
+  }
+  
+  
+  
+  .texto-offset {
+    padding-left: 5px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .texto-informacoes {
+    padding-left: 30px;
+    padding-right: 30px;
+  
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #9d9d9d;
+  }
+  
+  .rodape {
+      
+  }
+  
+  .texto-rodape {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fcdc4d;
+  
+  }
+  
+  .textarea {
+     size: 12px;
+  }
+  
+  ::placeholder {
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  @font-face {
+    font-family: "dalek";
+    src: url("fontes/dalek.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "SteinAntik";
+    src: url("fontes/SteinAntik.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "SteinAntik-Bold";
+    src: url("fontes/SteinAntik-Bold.ttf") format("truetype");
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Josefin+Sans:wght@300&display=swap");
+  
+  @media onlye screen and (max-width: 1024) {
+    .cartao {
+      width: 90%;
+    }
+  }
