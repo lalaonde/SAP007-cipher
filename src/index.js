@@ -1,4 +1,4 @@
-import cipher from './cipher.js';
+// import cipher from './cipher.js';   <-- TEM QUE TER ISSO - PRECISO DIVIDIR OS ARQUIVOS
 
 var button = document.querySelector("button");
 
