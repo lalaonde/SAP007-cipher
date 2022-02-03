@@ -28,9 +28,8 @@ const alfabeto = [
 ];
 const cipher = {
   encode: function (offset, mensagem) {
-    const mensagemParaCifrar = mensagem.toUpperCase()
-      .replace(/\s+/g, "");
-    
+    const mensagemParaCifrar = mensagem.toUpperCase().replace(/\s+/g, "");
+
     let resultadoCifra = "";
 
     for (var i = 0; i < mensagemParaCifrar.length; i++) {
@@ -45,13 +44,13 @@ const cipher = {
         resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
       }
     }
-    alert(resultadoCifra);
+    
+   return resultadoCifra;
   },
 
   decode: function (offset, mensagem) {
-    let mensagemParaDecifrar = mensagem.toUpperCase()
-      .replace(/\s+/g, ""); //prompt("Digite seu nome:");
-  
+    let mensagemParaDecifrar = mensagem.toUpperCase().replace(/\s+/g, ""); //prompt("Digite seu nome:");
+
     let resultadoDecifrar = "";
     let novoIndexLetraDecifrada;
     let letraDecifradaEVoltaAlfabeto;
@@ -72,10 +71,10 @@ const cipher = {
         resultadoDecifrar = resultadoDecifrar + letraDecifradaEVoltaAlfabeto;
       }
     }
-    alert(resultadoDecifrar);
+    return resultadoDecifrar;
   },
 };
 
 export default cipher;
 
-// isso ai em cima ja veio no arquivo, nao mexer
+

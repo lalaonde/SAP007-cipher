@@ -4,69 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    
-  
     <div class="cabecalho">
-    <h1>A Cifra de César</h1> 
-
+      <h1>A Cifra de César</h1>
     </div>
 
     <div class="conteudo">
-      
       <div class="cartao">
         <form id="dados" action="">
           <h3>Cifre sua mensagem:</h3>
           <div class="texto-area">
-              <textarea class="caixa-de-texto" cols="30" rows="15" name="" id="cifrar" cols="30" 
-                        rows="10" placeholder="Você sabia? No apogeu do Império, Roma era uma verdadeira megalópole: mais de um milhão de pessoas moravam na cidade."
-                        ></textarea>
-          </div> 
-          <br>
-          <input class="escolha-offset" type="number" id="offset" placeholder="Offset*"></input> 
+            <textarea
+              class="caixa-de-texto"
+              cols="30"
+              rows="15"
+              name=""
+              id="cifrar"
+              placeholder="Você sabia? No apogeu do Império, Roma era uma verdadeira megalópole: mais de um milhão de pessoas moravam na cidade."
+            ></textarea>
+          <!--  <textarea class="resposta1" placeholder="resposta"></textarea> -->
+          </div>
+          <br />
+          <input
+            class="escolha-offset"
+            type="number"
+            id="offset"
+            placeholder="Offset*"
+          />
           <button class="botao" type="button" id="btn-cifrar">Cifrar</button>
-          <p class="texto-offset">*Offset é o deslocamento da letra. Ex: ao escolher um offet de nº 4, a letra "B" andará 4 posições, tornando-se, assim,  a letra "F".</p>
-  
+          <p class="texto-offset">
+            *Offset é o deslocamento da letra. Ex: ao escolher um offet de nº 4,
+            a letra "B" andará 4 posições, tornando-se, assim, a letra "F".
+          </p>
         </form>
-
       </div>
 
       <div class="cartao">
         <form>
           <h3>Ou decifre:</h3>
-          <div class="class="texto-area>
-            <textarea class="caixa-de-texto" cols="30" rows="15" name="" id="decifrar" cols="30" 
-                      rows="10" placeholder="Os imperadores ingeriam diariamente uma pequena quantidade de cada veneno conhecido na época, como uma tentativa de ficarem imunes a essas substâncias."></textarea>
-          </div> 
-          <br>
-          <input class="escolha-offset" type="number" id="decifra-offset" placeholder="Offset"></input>
-          <button class="botao" type="button" id="btn-decifrar">Decifrar</button>
-  
+          <div class="texto-area">
+            <textarea
+              class="caixa-de-texto"
+              cols="30"
+              rows="15"
+              name=""
+              id="decifrar"
+              placeholder="Os imperadores ingeriam diariamente uma pequena quantidade de cada veneno conhecido na época, como uma tentativa de ficarem imunes a essas substâncias."
+            ></textarea>
+          </div>
+          <br />
+          <input
+            class="escolha-offset"
+            type="number"
+            id="decifra-offset"
+            placeholder="Offset"
+          />
+          <button class="botao" type="button" id="btn-decifrar">
+            Decifrar
+          </button>
         </form>
-
       </div>
-
     </div>
-
 
     <div class="informacoes">
       <h2>César quem? Cifra o quê?</h2>
-  <p class="texto-informacoes">A cifra de César foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado, é sabido que outras cifras de substituições foram utilizadas anteriormente.
-  </p>
-  <p class="texto-informacoes">Trata-se de um tipo de cifra de substituição, na qual cada letra de um texto a ser criptografado é substituída por outra letra, presente no alfabeto porém deslocada um certo número de posições à esquerda ou à direita.</p>
-  <img src="images/cifra.png" alt="sistema-de-cifra" class="imagem-cifra">
+      <p class="texto-informacoes">
+        A cifra de César foi nomeada em homenagem a Júlio César que, segundo
+        Suetónio, a usava com uma troca de três posições para proteger mensagens
+        de significado militar. Ainda que o uso deste esquema por César tenha
+        sido o primeiro a ser registrado, é sabido que outras cifras de
+        substituições foram utilizadas anteriormente.
+      </p>
+      <p class="texto-informacoes">
+        Trata-se de um tipo de cifra de substituição, na qual cada letra de um
+        texto a ser criptografado é substituída por outra letra, presente no
+        alfabeto porém deslocada um certo número de posições à esquerda ou à
+        direita.
+      </p>
+      <img src="images/cifra.png" alt="sistema-de-cifra" class="imagem-cifra" />
     </div>
 
     <div class="rodape">
       <p class="texto-rodape">Desenvolvido por Layssa Aragão 🦄</p>
-      <a class="texto-rodape" href="https://linkedin.com/in/layssaaragaob">Linkedin</a>
+      <a class="texto-rodape" href="https://linkedin.com/in/layssaaragaob"
+        >Linkedin</a
+      >
       <a class="texto-rodape" href="https://github.com/lalaonde">GitHub</a>
-      
     </div>
 
-    <script src="index.js" type="module"></script>
+    <script type="module" src="index.js" ></script>
   </body>
 </html>
