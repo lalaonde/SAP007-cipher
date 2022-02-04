@@ -11,6 +11,8 @@ cifrar.addEventListener("click", function () {
 let decifrar = document.getElementById("btn-decifrar");
 decifrar.addEventListener("click", function () {
   let mensagemParaCifrar = document.getElementById("decifrar").value;
+
+  console.log(document.getElementById("decifrar"))
   let offset = document.getElementById("decifra-offset").valueAsNumber;
-  document.getElementById("cifrar").value=cipher.decode(offset, mensagemParaCifrar);
+  document.getElementById("cifrar").value = cipher.decode(offset, mensagemParaCifrar);
 });
