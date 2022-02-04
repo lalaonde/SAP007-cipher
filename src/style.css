@@ -94,7 +94,7 @@ p {
   font-family: "SteinAntik-Bold";
   color: #9d9d9d;
   text-decoration: none;
-  letter-spacing:1px;
+  
 }
 
 .escolha-offset {
@@ -196,8 +196,11 @@ p {
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Josefin+Sans:wght@300&display=swap");
 
-@media only screen and (max-width: 1024) {
-  .cartao {
-    width: 90%;
+@media (max-width: 600) {
+ 
+
+
+ 
+    
   }
-}
+
