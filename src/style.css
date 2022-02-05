@@ -42,6 +42,7 @@ h3 {
 }
 
 p {
+  
 }
 
 .botao {
@@ -58,8 +59,12 @@ p {
 .cabecalho {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.598);
-  padding: 60px 0 10px 0;
+  
   display: flex;
+  
+  
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo {
