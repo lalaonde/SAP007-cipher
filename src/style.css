@@ -24,14 +24,14 @@ h1 {
 }
 h2 {
   margin-left: 20px;
-  color: #fcdc4d;
+  color: #FECBCF;
   font-family: "SteinAntik";
   font-size: 30px;
   margin: 30px;
 }
 
 h3 {
-  color: #fcdc4d;
+  color: #CFE4DD;
   font-family: "SteinAntik";
   font-size: 20px;
   margin-top: 2rem;
@@ -46,10 +46,19 @@ p {
 }
 
 .botao {
-  border-radius: 10px;
-  padding: 5px;
-  width: 45%;
-  font-family: "Josefin Sans", sans-serif;
+  color: #cfe4dd;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid  #FE87AC;  
+  width: 120px;
+  height: 70px;
+  
+  transition: 1s;
+  letter-spacing: 1.5px;
+  font-family: "SteinAntik-Bold";
+  font-size: 16px;
 }
 
 .botao:hover {
@@ -76,8 +85,8 @@ p {
 }
 
 .cartao {
-  margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
   width: 40%;
 
   border-radius: 10px;
@@ -103,9 +112,19 @@ p {
 }
 
 .escolha-offset {
-  border-radius: 10px;
-  width: 40%;
-  padding: 5px;
+  color: #cfe4dd;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid  #FE87AC;  
+  width: 100px;
+  height: 70px;
+ 
+  transition: 1s;
+  letter-spacing: 1.5px;
+  font-family: "SteinAntik-Bold";
+  font-size: 16px;
 }
 
 .flork-foto {
@@ -154,7 +173,7 @@ p {
 }
 
 .rodape {
-  background-color: #fcdc4dbb;
+  background-color: #cfe4dd95;
   padding: 20px;
   text-align: center;
 }
@@ -177,14 +196,16 @@ p {
 }
 
 .textarea {
-  size: 12px;
+  width: 30%;
 }
 
 ::placeholder {
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.5px;
 }
+
+
 
 @font-face {
   font-family: "dalek";

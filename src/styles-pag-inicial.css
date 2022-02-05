@@ -8,7 +8,7 @@ h1 {
     color: #FE87AC;
     font-family: "SteinAntik-Bold";
     font-size: 50px;
-    margin-top: 220px;
+    margin-top: 150px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    font-size: 20px;
     font-family: "SteinAntik-Bold";
     color: #CFE4DD;
     text-decoration: none;
@@ -68,7 +68,8 @@ h1 {
     background-size: 100%;
     width: 300px;
     height: 300px;
-    margin-top: 20px;;
+    margin-top: 50px;
+    margin-bottom: 30px;
     
 
 }
@@ -90,7 +91,7 @@ h1 {
 
 .side-bar {
     width: 50px;
-    height: 100vh;
+    height: 130vh;
     background: linear-gradient(#5c2d0354, #000729);
     position: absolute;
     right: 0;
