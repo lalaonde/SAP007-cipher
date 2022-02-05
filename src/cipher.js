@@ -16,7 +16,12 @@ const cipher = {
       } else {
         letraCifradaEVoltaAlfabeto = String.fromCharCode(novoIndexLetraCifrada);
       }
-      resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
+
+      if (resultadoCifra == "") {
+        resultadoCifra = letraCifradaEVoltaAlfabeto;
+      } else {
+        resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
+      }
     }
 
     return resultadoCifra;
@@ -42,7 +47,12 @@ const cipher = {
           novoIndexLetraDecifrada
         );
       }
-      resultadoDecifrar = resultadoDecifrar + letraDecifradaEVoltaAlfabeto;
+
+      if (resultadoDecifrar == "") {
+        resultadoDecifrar = letraDecifradaEVoltaAlfabeto;
+      } else {
+        resultadoDecifrar = resultadoDecifrar + letraDecifradaEVoltaAlfabeto;
+      }
     }
     return resultadoDecifrar;
   },
