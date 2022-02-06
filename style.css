@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+      90deg,
+      rgba(214, 250, 216, 0.08),
+      rgba(235, 253, 239, 0.1)
+    ),
+    url("images/love2.png");
+
+  background-size: cover;
+  background-position: top;
+}
+
+h1 {
+  color: #fcdc4d;
+  font-family: "SteinAntik-Bold";
+  font-size: 50px;
+  padding: 40px 0 40px 40px;
+}
+h2 {
+  margin-left: 20px;
+  color: #FE87AC;
+  font-family: "SteinAntik";
+  font-size: 30px;
+  margin: 30px;
+}
+
+h3 {
+  color: #CFE4DD;
+  font-family: "SteinAntik";
+  font-size: 20px;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+p {
+}
+
+.botao {
+  color: #CFE4DD;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #FECBCF;
+  width: 150px;
+  height: 70px;
+
+  transition: 1s;
+  letter-spacing: 1.5px;
+  font-family: "SteinAntik-Bold";
+  font-size: 16px;
+}
+
+.botao:hover {
+  background: #CFE4DD;
+  color: #5E556A;
+  border-color: #FECBCF;
+}
+
+.cabecalho {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.598);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo {
+  margin: auto;
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  width: 40%;
+
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.797);
+  border: solid 2px rgba(255, 255, 255, 0.027);
+  color: white;
+  padding: 4rem;
+}
+.caixa-de-texto {
+  border-radius: 10px;
+}
+
+.div-saiba-mais {
+  padding-left: 330px;
+  padding-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.598);
+  font-family: "SteinAntik-Bold";
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+.escolha-offset {
+  color: #FECBCF;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #FECBCF;
+  width: 100px;
+  height: 70px;
+
+  transition: 1s;
+  letter-spacing: 1.5px;
+  font-family: "SteinAntik-Bold";
+  font-size: 16px;
+}
+
+.flork-foto {
+  width: 10%;
+  margin-left: 150px;
+}
+
+.imagem-cifra {
+  width: 30%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.informacoes {
+  background-color: rgba(0, 0, 0, 0.242);
+  padding: 20px;
+}
+
+.imagem-contato {
+  display: inline-block;
+  border-radius: 100px;
+  width: 3%;
+  text-align: center;
+}
+
+.texto-offset {
+  padding-left: 5px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family:  "louis-light";
+  letter-spacing: 0.5px;
+  color: #9d9d9d;
+}
+
+.texto-informacoes {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:  "louis-light";
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #FAF0EF;
+}
+
+.rodape {
+  background-color: rgba(0, 0, 0, 0.242);
+  padding: 20px;
+  text-align: center;
+}
+
+.saiba-mais-txt {
+  text-decoration: none;
+  color: #9d9d9d;
+  background-color: rgba(0, 0, 0, 0.598);
+}
+
+.texto-rodape {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "SteinAntik-Bold";
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #CFE4DD;
+  letter-spacing: 1px;
+}
+
+.textarea {
+  width: 30;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-family:  "louis-light";
+  letter-spacing: 0.5px;
+}
+
+@font-face {
+  font-family: "dalek";
+  src: url("fontes/dalek.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SteinAntik";
+  src: url("fontes/SteinAntik.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SteinAntik-Bold";
+  src: url("fontes/SteinAntik-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "louis-light";
+  src: url("fontes/louis-light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "louis-bold";
+  src: url("fontes/louis-bold.ttf") format("truetype");
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Josefin+Sans:wght@300&display=swap");
+
+@media (max-width: 600) {
+}
