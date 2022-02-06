@@ -1,104 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles-pag-inicial.css" />
     <title>Document</title>
-  </head>
-
-  <body>
-    <div id="saiba-mais" class="informacoes">
-      <h2>Cifra o quê? Que história é essa?</h2>
-      <p class="texto-informacoes">
-        Na verdade, chama-se "A cifra de César", e foi nomeada em homenagem a
-        Júlio César, pois a utilizava com uma troca de 3 posições para proteger
-        mensagens de significado militar. Ainda que o uso deste esquema por
-        César tenha sido o primeiro a ser registrado, é sabido que outras cifras
-        de substituições foram utilizadas anteriormente.
-      </p>
-      <p class="texto-informacoes">
-        Trata-se de um tipo de cifra de substituição, em que cada letra de um
-        texto a ser criptografado é substituída por outra letra, presente no
-        alfabeto, porém deslocada um certo número de posições à esquerda ou à
-        direita.
-      </p>
-      <img src="images/cifra.png" alt="sistema-de-cifra" class="imagem-cifra" />
+</head>
+<body>
+    <h1>A Cifra do Crush</h1>
+    <p>
+        Mande uma mensagem secreta para sue crush agora 💛 <br />
+    </p>
+    <div class="div-logo">
+        <div class="div-com-imagem"></div>
     </div>
-
-    <div class="conteudo">
-      <div class="cartao">
-        <form id="dados" action="">
-          <h3>Cifre sua mensagem:</h3>
-          <div class="texto-area">
-            <textarea
-              class="caixa-de-texto"
-              cols="30"
-              rows="15"
-              name=""
-              id="cifrar"
-              placeholder="Você sabia? No apogeu do Império, Roma era uma verdadeira megalópole: mais de um milhão de pessoas moravam na cidade."
-            ></textarea>
-          </div>
-          <br />
-          <input
-            class="escolha-offset"
-            type="number"
-            id="offset"
-            placeholder="Offset*"
-          />
-          <button class="botao" type="button" id="btn-cifrar">Cifrar</button>
-          <p class="texto-offset">
-            *Offset é o deslocamento da letra. Ex: ao escolher um offet 2,
-            a letra "B" andará 2 posições, tornando-se, assim, a letra "D".
-          </p>
-        </form>
-      </div>
-
-      <div class="cartao">
-        <form>
-          <h3>Ou decifre:</h3>
-          <div class="texto-area">
-            <textarea
-              class="caixa-de-texto"
-              cols="30"
-              rows="15"
-              name=""
-              id="decifrar"
-              placeholder="Os imperadores ingeriam diariamente uma pequena quantidade de cada veneno conhecido na época, como uma tentativa de ficarem imunes a essas substâncias."
-            ></textarea>
-          </div>
-          <br />
-          <input
-            class="escolha-offset"
-            type="number"
-            id="decifra-offset"
-            placeholder="Offset"
-          />
-          <button class="botao" type="button" id="btn-decifrar">
-            Decifrar
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div class="rodape">
-      <p class="texto-rodape">Desenvolvido por Layssa Aragão 🦄</p>
-      <div class="icones-clicaveis">
-        <a class="" href="https://github.com/lalaonde">
-          <img class="imagem-contato" src="images/github.jpeg" alt="github" />
+    <div class="div-btn">
+        <a href="pagina-cipher.html">
+            <button type="button" class="btn">Saiba mais</button>
         </a>
-        <a class="" href="https://linkedin.com/in/layssaaragaob">
-          <img
-            class="imagem-contato"
-            src="images/linkedin.png"
-            alt="linkedin"
-          />
-        </a>
-      </div>
-    </div>
 
-    <script type="module" src="index.js"></script>
-  </body>
+    </div>
+    <div class="musica">
+        <audio autostart="false" controls="controls" volume="20">
+            <source src="music/careless-whisper.mp3" type="audio/mp3" />
+        
+        </audio>
+    </div>
+    
+    <div class="side-bar">
+        <div class="social-links">
+            <a href="https://github.com/lalaonde">
+                <img src="images/github.jpeg" alt="">
+            </a>
+            <a href="https://linkedin.com/in/layssaaragaob">
+                <img src="images/linkedin.png" alt="">
+            </a>
+            
+        </div>
+
+    </div>
+    <div class="hearts">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+        <img src="images/hearts.png" alt="">
+    </div>
+    
+</body>
 </html>

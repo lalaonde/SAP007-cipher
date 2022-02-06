@@ -9,14 +9,20 @@ const cipher = {
       let novoIndexLetraCifrada =
         parseInt(mensagemParaCifrar.charCodeAt(i)) + offset;
 
+      // lógica do if abaixo:
+      //s = 83 + 33 = 116 = 116 - 65 = 51 % 26 = 25 + 65 = 90
+      //z = 90 + 300 = 390 - 65 = 325 % 26 = 13 + 65 = 78 = letra N
       if (novoIndexLetraCifrada > 90) {
         letraCifradaEVoltaAlfabeto = String.fromCharCode(
           ((novoIndexLetraCifrada - 65) % 26) + 65
-        );
+        ); // o resultado do módulo sao quantas etras teno que correr depois da volta
+        // o resultado do modulo é a quantidade de letras que passou de 26
       } else {
         letraCifradaEVoltaAlfabeto = String.fromCharCode(novoIndexLetraCifrada);
-      }
+      } 
 
+     /* se eu tirar e deixar apenas -> resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
+     // o teste devolve 50%. Se eu deixo, volta 75%. Deixo ou nao? */
       if (resultadoCifra == "") {
         resultadoCifra = letraCifradaEVoltaAlfabeto;
       } else {
@@ -38,6 +44,10 @@ const cipher = {
       novoIndexLetraDecifrada =
         parseInt(mensagemParaDecifrar.charCodeAt(i)) - offset;
 
+      // a = 1 - 65 = - 64 + 65 = 1 % 26 -> 91 - 1 = 90
+      // a = 33 - 65 = - 32 + 65 = 33 % 26 = 7 -> 91 -7= 84  (91 para contar a volta do Z para o )
+      //a = 65 - 33 = 32 - 90 = - 58 % 26 = - 6 + 90 = 84  //
+      //esse - 58 negativo faz o módulo assim -(58 % 26)= - 6 // assim subtrai de 90. +6 somaria e passaria de 90 novamente
       if (novoIndexLetraDecifrada < 65) {
         letraDecifradaEVoltaAlfabeto = String.fromCharCode(
           ((novoIndexLetraDecifrada - 90) % 26) + 90
