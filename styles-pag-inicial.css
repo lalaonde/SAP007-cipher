@@ -190,3 +190,97 @@ h1 {
     animation-delay: 7s;
     width: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        color: #FE87AC;
+        font-family: "SteinAntik-Bold";
+        font-size: 2rem;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+        padding-right: ;
+        text-align: center;
+
+        
+      }
+    
+      p {
+        
+        font-size: 1rem;
+       
+        padding-left: 15%;
+        text-align: center;
+        margin-top: 15%;
+        
+      }
+      .side-bar {
+        
+        background: linear-gradient(#5c2d0354, #000729);
+        padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100px;
+    width: 500px;
+    padding-right: 0px;
+    padding-left: 0px;
+    left: 0px;
+    
+    }
+    .social-links img {
+        width: 30px;
+        border-radius:30px;
+       
+        cursor: pointer;
+    
+    }
+    .social-links {
+        width: 50px;
+        text-align: center;
+        display: flex;
+        padding-left: 26%;
+        
+       
+    
+    }
+    .div-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:15%;
+        
+    
+    }
+    
+    .div-com-imagem {
+        background-image: url("images/flork1-circle.png");
+        filter: drop-shadow(10px 10px 10px #faf0ef8c);
+        background-size: 100%;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        
+    
+    }
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:15%;
+    }
+
+    .btn {
+        margin: 0;
+        margin-top: 0;
+    }
+    .musica {
+        width: 150px;
+        padding-left: 30%;
+        margin-top: 15%;
+
+    }
+
+}

@@ -12,24 +12,18 @@ const cipher = {
       // lógica do if abaixo:
       //s = 83 + 33 = 116 = 116 - 65 = 51 % 26 = 25 + 65 = 90
       //z = 90 + 300 = 390 - 65 = 325 % 26 = 13 + 65 = 78 = letra N
+      // 325 letras para percorrer no alfabeto que só tem 26 letras.
+      /* O resultado do módulo sao quantas letras tenho que correr depois da volta / 
+      o resultado do modulo é a quantidade de letras que passou de 26 */
       if (novoIndexLetraCifrada > 90) {
         letraCifradaEVoltaAlfabeto = String.fromCharCode(
           ((novoIndexLetraCifrada - 65) % 26) + 65
-        ); // o resultado do módulo sao quantas etras teno que correr depois da volta
-        // o resultado do modulo é a quantidade de letras que passou de 26
+        );
       } else {
         letraCifradaEVoltaAlfabeto = String.fromCharCode(novoIndexLetraCifrada);
-      } 
-
-     /* se eu tirar e deixar apenas -> resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
-     // o teste devolve 50%. Se eu deixo, volta 75%. Deixo ou nao? */
-      if (resultadoCifra == "") {
-        resultadoCifra = letraCifradaEVoltaAlfabeto;
-      } else {
-        resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
       }
+      resultadoCifra = resultadoCifra + letraCifradaEVoltaAlfabeto;
     }
-
     return resultadoCifra;
   },
 
@@ -58,11 +52,7 @@ const cipher = {
         );
       }
 
-      if (resultadoDecifrar == "") {
-        resultadoDecifrar = letraDecifradaEVoltaAlfabeto;
-      } else {
-        resultadoDecifrar = resultadoDecifrar + letraDecifradaEVoltaAlfabeto;
-      }
+      resultadoDecifrar = resultadoDecifrar + letraDecifradaEVoltaAlfabeto;
     }
     return resultadoDecifrar;
   },
