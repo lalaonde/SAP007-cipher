@@ -86,14 +86,13 @@ Superar o desafio de quebrar o silêncio e de demonstrar o interesse romântico 
 ## 6. Resultado
 Projeto desenvolvido em 3 sprints.
 
-<a height="30px" placeholder="ola" href="https://drive.google.com/file/d/1HNtupmp3aF3thRPZc-9cIqidxEz3M58U/view?usp=sharing">Veja aqui!</a> 
+<a height="30px" placeholder="ola" href="https://github.com/lalaonde/SAP007-cipher/deployments/activity_log?environment=github-pages">Veja aqui!</a> 
 
 ![Getting Started](src/images/cipher-demo.png)
 
 #### **Parte Opcional "Hacker edition" cumprida**
 
 ✅ Cifrar/decifrar minúsculas. <br>
-✅ Permitir usar `offset` negativo.
 
 ## 7. Sobre a desenvolvedora
 Olá! Sou aluna do bootcamp Laborátoria, focado em desenvolvimento Javascript e este foi o primeiro projeto.
